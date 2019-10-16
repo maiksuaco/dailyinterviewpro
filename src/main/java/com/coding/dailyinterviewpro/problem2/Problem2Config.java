@@ -9,23 +9,23 @@ import org.springframework.context.annotation.Configuration;
 public class Problem2Config {
 
     @Bean
-    @Qualifier("l1")
-    public ListNode buildL1() {
-        ListNode l1 = new ListNode(2);
-        l1.next = new ListNode(4);
-        l1.next.next = new ListNode(3);
+    @Qualifier("l3")
+    public ListNode buildL3() {
+        ListNode l3 = new ListNode(2);
+        l3.next = new ListNode(4);
+        l3.next.next = new ListNode(3);
 
-        return l1;
+        return l3;
     }
 
     @Bean
-    @Qualifier("l2")
-    public ListNode buildL2() {
-        ListNode l2 = new ListNode(5);
-        l2.next = new ListNode(6);
-        l2.next.next = new ListNode(4);
+    @Qualifier("l4")
+    public ListNode buildL4() {
+        ListNode l4 = new ListNode(5);
+        l4.next = new ListNode(6);
+        l4.next.next = new ListNode(4);
 
-        return l2;
+        return l4;
     }
 
 }

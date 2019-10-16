@@ -1,12 +1,12 @@
 package com.coding.dailyinterviewpro;
 
 import com.coding.dailyinterviewpro.common.ListNode;
+import com.coding.dailyinterviewpro.common.ListNodePrinter;
 import com.coding.dailyinterviewpro.problem1.Solution;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.factory.parsing.Problem;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -25,6 +25,13 @@ public class DailyInterviewProApplication implements CommandLineRunner {
     @Autowired
     @Qualifier("l3")
     ListNode l3;
+
+    @Autowired
+    @Qualifier("l4")
+    ListNode l4;
+
+
+    ListNodePrinter printer;
 
     private static Logger LOG = LoggerFactory.getLogger(DailyInterviewProApplication.class);
 
@@ -47,15 +54,14 @@ public class DailyInterviewProApplication implements CommandLineRunner {
 
        // System.out.println(solution);
 
-        ListNode merged = Solution.mergeTwoLists(l1,l3);
-        String s = "";
-        while (merged != null) {
-            s += merged.val + "->";
-            merged = merged.next;
-        }
+        ListNode merged = Solution.mergeTwoLists(l1,l2);
 
-        System.out.println(s);
+        printer = new ListNodePrinter(merged);
 
-        System.out.println(com.coding.dailyinterviewpro.problem2.Solution.addTwoNumbers(l1, l2));
+        System.out.println(printer.toString());
+
+        printer = new ListNodePrinter(com.coding.dailyinterviewpro.problem2.Solution.addTwoNumbers(l3, l4, 0));
+        System.out.println(printer.toString());
     }
+
 }
