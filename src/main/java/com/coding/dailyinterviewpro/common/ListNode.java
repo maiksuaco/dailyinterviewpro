@@ -1,6 +1,4 @@
-package com.coding.dailyinterviewpro.problem1;
-
-import org.springframework.stereotype.Component;
+package com.coding.dailyinterviewpro.common;
 
 
 public class ListNode {

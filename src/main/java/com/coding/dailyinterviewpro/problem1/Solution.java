@@ -1,5 +1,7 @@
 package com.coding.dailyinterviewpro.problem1;
 
+import com.coding.dailyinterviewpro.common.ListNode;
+
 public class Solution {
 
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
