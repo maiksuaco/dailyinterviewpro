@@ -1,10 +1,9 @@
-package com.coding.dailyinterviewpro.problem1;
+package com.coding.dailyinterviewpro.merger;
 
 import com.coding.dailyinterviewpro.common.ListNode;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class Problem1Config {

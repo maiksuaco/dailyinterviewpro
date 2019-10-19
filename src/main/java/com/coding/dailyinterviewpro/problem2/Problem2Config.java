@@ -11,7 +11,7 @@ public class Problem2Config {
     @Bean
     @Qualifier("l3")
     public ListNode buildL3() {
-        ListNode l3 = new ListNode(2);
+        ListNode l3 = new ListNode(7);
         l3.next = new ListNode(4);
         l3.next.next = new ListNode(3);
 
@@ -23,7 +23,7 @@ public class Problem2Config {
     public ListNode buildL4() {
         ListNode l4 = new ListNode(5);
         l4.next = new ListNode(6);
-        l4.next.next = new ListNode(4);
+        l4.next.next = new ListNode(9);
 
         return l4;
     }

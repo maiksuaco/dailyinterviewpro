@@ -1,4 +1,4 @@
-package com.coding.dailyinterviewpro.problem1;
+package com.coding.dailyinterviewpro.merger;
 
 import com.coding.dailyinterviewpro.common.ListNode;
 

@@ -2,7 +2,6 @@ package com.coding.dailyinterviewpro;
 
 import com.coding.dailyinterviewpro.common.ListNode;
 import com.coding.dailyinterviewpro.common.ListNodePrinter;
-import com.coding.dailyinterviewpro.problem1.Solution;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +29,14 @@ public class DailyInterviewProApplication implements CommandLineRunner {
     @Qualifier("l4")
     ListNode l4;
 
+    @Autowired
+    @Qualifier("l5")
+    ListNode l5;
+
+    @Autowired
+    @Qualifier("l6")
+    ListNode l6;
+
 
     ListNodePrinter printer;
 
@@ -53,7 +60,7 @@ public class DailyInterviewProApplication implements CommandLineRunner {
        // ListNode solution = Solution.addTwoNumbersRecursive(l1,l2);
 
        // System.out.println(solution);
-
+/*
         ListNode merged = Solution.mergeTwoLists(l1,l2);
 
         printer = new ListNodePrinter(merged);
@@ -62,6 +69,24 @@ public class DailyInterviewProApplication implements CommandLineRunner {
 
         printer = new ListNodePrinter(com.coding.dailyinterviewpro.problem2.Solution.addTwoNumbers(l3, l4, 0));
         System.out.println(printer.toString());
+
+        System.out.println("L5:");
+        printer = new ListNodePrinter(l5);
+        System.out.println(printer);
+
+
+        printer = new ListNodePrinter(com.coding.dailyinterviewpro.LinkedListReversor.Solution.reverseRecursively(l5));
+        System.out.println("L5 reverseRecursively:");
+        System.out.println(printer);
+
+
+        System.out.println("L6:");
+        printer = new ListNodePrinter(l6);
+        System.out.println(printer);
+        System.out.println("L6 Inversed:");
+        printer = new ListNodePrinter(com.coding.dailyinterviewpro.LinkedListReversor.Solution.reverseIteratively(l6));
+        System.out.println(printer);*/
+
     }
 
 }

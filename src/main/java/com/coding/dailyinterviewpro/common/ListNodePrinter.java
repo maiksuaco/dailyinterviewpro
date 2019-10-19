@@ -5,18 +5,23 @@ import org.springframework.stereotype.Component;
 
 
 public class ListNodePrinter {
-    private ListNode merged;
+    private ListNode listNodeToPrint;
 
-    public ListNodePrinter(ListNode merged) {
-        this.merged = merged;
+    public ListNodePrinter(ListNode listNode) {
+        listNodeToPrint = listNode;
     }
 
     public String toString() {
+
         String s = "";
-        while (merged != null) {
-            s += merged.toString();
-            merged = merged.next;
+
+        ListNode cursor = listNodeToPrint;
+
+        while (cursor != null) {
+            s += cursor.toString();
+            cursor = cursor.next;
         }
+
         return s;
     }
 }
